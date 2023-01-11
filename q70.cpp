@@ -5,7 +5,8 @@ using namespace std;
 
 int main(int argc, char * argv[]) {
     if (argc != 2) {
-        cout << "Usage: " << argv[0] << " <filename>";
+        cout << "Usage: " << argv[0] << " <filename>\n";
+        return 2;
     }
 
     ifstream readfile(argv[1]);

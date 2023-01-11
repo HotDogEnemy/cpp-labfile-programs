@@ -31,11 +31,12 @@ int main() {
     
     // Printing file contents
     string buffer;
-    cout << "File contents: ";
+    cout << "File contents: \n";
     while (fileobj2) {
         getline(fileobj2, buffer);
         cout << buffer;
     }
+    cout << '\n';
 
     // Closing file with close()
     fileobj2.close();

@@ -9,6 +9,10 @@ int main() {
     char ch;
     while (cin.get(ch)) {
         cout.put(ch);
+        // Break out of loop if newline encountered
+        if (ch == '\n') {
+            break;
+        }
     }
     return 0;
 }
